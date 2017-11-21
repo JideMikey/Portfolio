@@ -1,0 +1,105 @@
+/* the global Styles */
+
+
+body {
+    margin:0;
+    padding:0;
+    background: #222;
+  }
+  header {
+    background: rgb(40, 40, 40);
+    color: #ffffff;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 1em;
+    font-family: Helvetica-Light;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #eee;
+    text-align: center;
+    padding: 2px;
+  }
+
+  footer{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: rgb(46, 46, 46);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: center;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  color: #adadad;
+}
+
+/* Add a green background color to the active link */
+.navbar a.active {
+
+  color: #adadad;
+}
+
+/* Hide the link that should open and close the navbar on small screens */
+.navbar .icon {
+  display: none;
+}
+
+  section {
+    font-size: 1em;
+    background: #888;
+    margin: 1em 1% 1em 1%;
+  }
+  section:hover {
+    background: #666;
+  }
+  /* FIRST BREAK POINT */
+  @media screen and (min-width: 500px) {
+      body {
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(221, 221, 221));
+        font-family: Arial;
+      }
+  
+      section {
+        display: inline-block;
+        width: 45%;
+      }
+  }
+  /* END FIRST BREAKPOINT */
+  
+  
+  /* SECOND BREAKPOINT (DESKTOP SIZE) */
+  @media screen and (min-width: 1000px) {
+    body {
+      background: linear-gradient(to right, rgb(255, 255, 255)et, rgb(221, 221, 221;
+    }
+  
+    section {
+      width: 22%;
+    }
+  }
+  /* END SECOND BREAKPOINT */
+  
