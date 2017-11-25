@@ -4,7 +4,6 @@
 body {
     margin:0;
     padding:0;
-    background: #222;
   }
   header {
     background: rgb(40, 40, 40);
@@ -14,22 +13,36 @@ body {
   h1 {
     font-size: 2.5em;
     margin: 0;
-    padding: 1em;
-    font-family: Helvetica-Light;
+    padding: 2em;
+    font-family: 'Helvetica Neue';
   }
   h2 {
     font-size: 1.5em;
   }
   main {
-    max-width: 1000px;
-    margin: 0 auto;
-    background: #eee;
     text-align: center;
-    padding: 2px;
+    width: 100%;
   }
 
   footer{
     font-family: Arial, Helvetica, sans-serif;
+  }
+  /*
+  section{
+    width: 100%;
+    background: yellow;
+  }
+  */
+
+  div.fixed {
+    position: relative;
+    bottom: 100;
+    right: 100;
+
+  }
+
+  .project1 {
+    background-color: red;
   }
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
@@ -70,11 +83,11 @@ body {
 
   section {
     font-size: 1em;
-    background: #888;
-    margin: 1em 1% 1em 1%;
+    margin: 1em 1% 1em %;
+    
   }
   section:hover {
-    background: #666;
+    background: rgba(255, 121, 37, 0.15);
   }
   /* FIRST BREAK POINT */
   @media screen and (min-width: 500px) {
@@ -82,11 +95,12 @@ body {
         background: linear-gradient(to right, rgb(255, 255, 255), rgb(221, 221, 221));
         font-family: Arial;
       }
-  
+  /*
       section {
         display: inline-block;
-        width: 45%;
+        width: 100%;
       }
+  */
   }
   /* END FIRST BREAKPOINT */
   
@@ -94,12 +108,9 @@ body {
   /* SECOND BREAKPOINT (DESKTOP SIZE) */
   @media screen and (min-width: 1000px) {
     body {
-      background: linear-gradient(to right, rgb(255, 255, 255)et, rgb(221, 221, 221;
+      background: linear-gradient(to right, rgb(255, 255, 255)et, rgb(221, 221, 221));
     }
   
-    section {
-      width: 22%;
-    }
   }
   /* END SECOND BREAKPOINT */
   
