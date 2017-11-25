@@ -27,12 +27,6 @@ body {
   footer{
     font-family: Arial, Helvetica, sans-serif;
   }
-  /*
-  section{
-    width: 100%;
-    background: yellow;
-  }
-  */
 
   div.fixed {
     position: relative;
@@ -42,7 +36,38 @@ body {
   }
 
   .project1 {
-    background-color: red;
+    width: 100%;
+  }
+
+  .project2 {
+    width: 50%;
+    float: left;
+  }
+  .project3 {
+    width: 50%;
+    float: right;
+  }
+
+  .project4 {
+    text-align: center;
+    width: 100%;
+    float: left;
+  }
+
+  .project1:hover {
+    background: rgba(153, 1, 1, 0.15);
+  }
+
+  .project2:hover {
+    background: rgba(37, 168, 255, 0.15);
+  }
+
+  .project3:hover {
+    background: rgba(255, 37, 219, 0.15);
+  }
+
+  .project4:hover {
+    background: rgba(80, 40, 8, 0.15);
   }
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
@@ -83,12 +108,9 @@ body {
 
   section {
     font-size: 1em;
-    margin: 1em 1% 1em %;
     
   }
-  section:hover {
-    background: rgba(255, 121, 37, 0.15);
-  }
+
   /* FIRST BREAK POINT */
   @media screen and (min-width: 500px) {
       body {
