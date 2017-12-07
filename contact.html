@@ -1,1 +1,46 @@
-c
+<html>
+    <head>
+        <title>
+            Contact Mikey Mwedia
+        </title>
+        <script>
+            function subnmitFunction()
+            {
+                var x=document.forms["contactForm"]["name"].value;
+                var y=document.forms["contactForm"]["email"].value;
+                var w=document.forms["contactForm"]["subject"].value;
+                var z=document.forms["contactForm"]["body"].value;
+                if(x==null || x=="" || y==null || y=="" || z==null || z=="" || w==null || w=="")
+                    {
+                        alert("Not all fields filled in correctly");
+                    }
+                    else{
+                        if(x!="webi")
+                        {
+                            if(y!="72626")
+                            {
+                                alert("Email Sent!");
+                            }
+                            else{
+                                alert("Something has gone terribly wrong!");
+                            }
+                        }
+                        else{
+                            alert("Email cannot be sent");
+                        }
+                    }
+            }
+        </script>
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+    <body>
+        <form name="contactForm" onsubmit="subnmitFunction()">
+            Name:<input type="text" name="name"> <br>
+            Email:<input type="email" name="email"> <br>
+            Subject:<input type="text" name="subject"> <br>
+            Body:<input type="text" name="body"> <br>
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>

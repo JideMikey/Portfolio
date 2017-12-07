@@ -27,7 +27,6 @@ main {
 
 footer {
   position: absolute;
-  display: block;
   bottom: 0;
   height: 4em;
   background: rgb(94, 204, 167);
@@ -74,6 +73,10 @@ footer {
 
 .project4:hover {
   background: rgba(80, 40, 8, 0.15);
+}
+input[type=text] {
+  border: 2px solid red;
+  border-radius: 4px;
 }
 
 
