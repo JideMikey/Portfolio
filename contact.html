@@ -34,13 +34,26 @@
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
-        <form name="contactForm" onsubmit="subnmitFunction()">
-            Name:<input type="text" name="name"> <br>
-            Email:<input type="email" name="email"> <br>
-            Subject:<input type="text" name="subject"> <br>
-            Body:<input type="text" name="body"> <br>
-            <input type="submit" value="Submit">
+        <header>
+                <div class="navbar" id="myNavbar">
+                    <a href="index.html"><img src="images/MIKEYMEDIA WHITE.png" width="50px;"></a>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
+                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+        </header>
+        <br>
+        <main>
+            <form name="contactForm" onsubmit="subnmitFunction()">
+                <label for="name">Name:<input type="text" name="name"></label> <br>
+                <label for="email">Email:<input type="email" name="email"></label> <br>
+                <label for="subject">Subject:<input type="text" name="subject"></label> <br>
+                <label for="body">Body:<input type="text" name="body"></label> <br>
+                <input type="submit" value="Submit">
 
-        </form>
+            </form>
+        </main>
     </body>
 </html>

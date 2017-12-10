@@ -7,6 +7,8 @@ body {
   position: relative;
 }
 header {
+  clear: both;
+  width: 100%;
   background: rgb(40, 40, 40);
   color: #ffffff;
   text-align: center;
@@ -26,10 +28,11 @@ main {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  height: 4em;
-  background: rgb(94, 204, 167);
+  text-align: center;
+  color: white;
+  clear: both;
+  padding: 2em;
+  background: rgb(71, 71, 71);
 }
 
 /* div.fixed {
@@ -73,6 +76,10 @@ footer {
 
 .project4:hover {
   background: rgba(80, 40, 8, 0.15);
+}
+
+.mySocials a:hover {
+  background-color: yellow;
 }
 input[type=text] {
   border: 2px solid red;
