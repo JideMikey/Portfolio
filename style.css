@@ -64,26 +64,54 @@ footer {
 
 .project1:hover {
   background: rgba(255, 37, 37, 0.15);
+  cursor: pointer;
 }
 
 .project2:hover {
   background: rgba(37, 168, 255, 0.15);
+  cursor: pointer;
 }
 
 .project3:hover {
   background: rgba(255, 37, 219, 0.15);
+  cursor: pointer;
 }
 
 .project4:hover {
   background: rgba(80, 40, 8, 0.15);
+  cursor: pointer;
 }
 
 .mySocials a:hover {
   background-color: yellow;
+  cursor: pointer;
 }
-input[type=text] {
-  border: 2px solid red;
-  border-radius: 4px;
+input[type=text], select, textarea {
+  border-radius: 2px;
+  width: 30%;
+  height:3em;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type=email] {
+  border-radius: 2px;
+  width: 30%;
+  height:3em;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  background-color: rgb(156, 156, 156);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
@@ -132,7 +160,12 @@ input[type=text] {
   /* FIRST BREAK POINT */
   @media screen and (min-width: 500px) {
       body {
-        background: linear-gradient(to right, rgb(255, 255, 255), rgb(221, 221, 221));
+        /* background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 0, 0)); */
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-radial-gradient(circle, rgb(255, 255, 255), rgb(224, 224, 224), rgb(68, 68, 68)); /* Safari */
+        background: -o-radial-gradient(circle, rgb(255, 255, 255), rgb(224, 224, 224), rgb(68, 68, 68)); /* Opera 11.6 to 12.0 */
+        background: -moz-radial-gradient(circle, rgb(255, 255, 255), rgb(224, 224, 224), rgb(68, 68, 68)); /* Firefox 3.6 to 15 */
+        background: radial-gradient(circle, rgb(255, 255, 255), rgb(224, 224, 224), rgb(68, 68, 68)); /* Standard syntax */
         font-family: Arial;
       }
   /*

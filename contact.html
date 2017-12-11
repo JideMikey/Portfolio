@@ -1,35 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8" />
         <title>
             Contact Mikey Mwedia
         </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <script>
-            function subnmitFunction()
-            {
-                var x=document.forms["contactForm"]["name"].value;
-                var y=document.forms["contactForm"]["email"].value;
-                var w=document.forms["contactForm"]["subject"].value;
-                var z=document.forms["contactForm"]["body"].value;
-                if(x==null || x=="" || y==null || y=="" || z==null || z=="" || w==null || w=="")
-                    {
-                        alert("Not all fields filled in correctly");
-                    }
-                    else{
-                        if(x!="webi")
-                        {
-                            if(y!="72626")
-                            {
-                                alert("Email Sent!");
-                            }
-                            else{
-                                alert("Something has gone terribly wrong!");
-                            }
-                        }
-                        else{
-                            alert("Email cannot be sent");
-                        }
-                    }
-            }
+            
         </script>
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
@@ -46,14 +24,24 @@
         </header>
         <br>
         <main>
-            <form name="contactForm" onsubmit="subnmitFunction()">
-                <label for="name">Name:<input type="text" name="name"></label> <br>
-                <label for="email">Email:<input type="email" name="email"></label> <br>
-                <label for="subject">Subject:<input type="text" name="subject"></label> <br>
-                <label for="body">Body:<input type="text" name="body"></label> <br>
-                <input type="submit" value="Submit">
-
+            <section>
+                <img src="images/desk.jpg" width="100%">
+            </section>
+            <section>
+                <h1>Contact</h1>
+                <p>To enquire about Mikey Media's services opr to work eith us, fill in the contact form below with the relevant detaiks</p>
+            </section>
+            <section>
+                <form name="contactForm" onsubmit="subnmitFunction()">
+                    <label for="name">Name:<br><input type="text" name="name" placeholder="Full Name"></label> <br><br>
+                    <label for="email">Email:<br><input type="email" name="email"placeholder="Email Address"></label> <br><br>
+                    <label for="subject">Subject:<br><input type="text" name="subject" placeholder="Subject"></label> <br><br>
+                    <label for="body">Body:<br><textarea id="body" name="body" placeholder="Enter your message here" style="height:200px"> </textarea></label> <br><br>
+                    <input type="submit" value="Submit">
+                </section>
             </form>
         </main>
+        <footer>© 2017 | MIKEYMEDIA.CO.UK</footer>
+        <script src="scripts.js"></script>
     </body>
 </html>
