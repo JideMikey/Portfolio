@@ -6,6 +6,7 @@ body {
   padding:0;
   position: relative;
 }
+
 header {
   clear: both;
   width: 100%;
@@ -34,13 +35,6 @@ footer {
   padding: 2em;
   background: rgb(71, 71, 71);
 }
-
-/* div.fixed {
-  position: relative;
-  bottom: 100;
-  right: 100;
-
-} */
 
 .project1 {
   width: 100%;
@@ -82,10 +76,110 @@ footer {
   cursor: pointer;
 }
 
-.mySocials a:hover {
-  background-color: yellow;
+#mimis {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#mimis:hover {opacity: 0.4;}
+
+#sapphire {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sapphire:hover {opacity: 0.4;}
+
+#msJoycee {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#msJoycee:hover {opacity: 0.4;}
+
+#monique {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#monique:hover {opacity: 0.4;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(255, 255, 255); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.959); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: rgb(221, 11, 11);
+  padding: 10px 0;
+  height: 150px;
+  font-size: 28px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
   cursor: pointer;
 }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+      width: 100%;
+  }
+}
+
 input[type=text], select, textarea {
   border-radius: 2px;
   width: 30%;
@@ -115,7 +209,7 @@ input[type=submit] {
 }
 
 
-/* Place the navbar at the bottom of the page, and make it stick */
+/* properties for the navigation bar */
 .navbar {
   background-color: rgb(46, 46, 46);
   overflow: hidden;

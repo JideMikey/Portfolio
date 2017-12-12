@@ -6,7 +6,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-
+    <style>
+        #map {
+        height: 400px;
+        width: 100%;
+        }
+    </style>
+</head>
 </head>
 
 <body>
@@ -28,8 +34,8 @@
         </section>
         <section>
             <h1> About MikeyMedia</h1>
-            <p>Hi my name is Jide blah blah blah blah blah blah blah blah blah blah blah</p>
-            <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+            <p>Hi my name is Jide and I am a freelance graphic designer</p>
+            <p id="description">Graphic designers create visual concepts, by hand or using computer software, to communicate ideas that inspire, inform, or captivate consumers. They develop the overall layout and production design for advertisements, brochures, magazines, and corporate reports.</p>
             <br>
             <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
         </section>
@@ -37,11 +43,18 @@
         <section>
             <h3>Follow my socials</h3>
             <div class="social" id="mySocials">
-                <a href="https://twitter.com/jidemikey"><img src="images/twitter.png" width="26px"></a>
-                <a href="https://instagram.com/jidemikey"><img src="images/instagram.png" width="26px"></a>
+                <a href="https://twitter.com/jidemikey"><img src="images/twitter.png" id="twitter" width="26px"></a>
+                <a href="https://instagram.com/jidemikey"><img src="images/instagram.png" id=-"instagram" width="26px"></a>
             </div>
         </section>
+        <h1>Find us at:</h1>
+        <div id="map"></div>
+
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLzduyutbRer4Geh0MT2KWOKquXE7vdOA&callback=initMap">
+        </script>
 	</main>
-	<footer>© 2017 | MIKEYMEDIA.CO.UK</footer>
+    <footer>© 2017 | MIKEYMEDIA.CO.UK</footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
