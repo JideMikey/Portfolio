@@ -5,6 +5,7 @@ body {
   margin:0;
   padding:0;
   position: relative;
+  font-family: Verdana, sans-serif;
 }
 
 header {
@@ -35,6 +36,7 @@ footer {
   padding: 2em;
   background: rgb(71, 71, 71);
 }
+
 
 .project1 {
   width: 100%;
@@ -252,8 +254,10 @@ input[type=submit] {
   }
 
   /* FIRST BREAK POINT */
-  @media screen and (min-width: 500px) {
-      body {
+  @media screen and (min-width: 300px) {
+    
+    
+    body {
         /* background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 0, 0)); */
         background: red; /* For browsers that do not support gradients */
         background: -webkit-radial-gradient(circle, rgb(255, 255, 255), rgb(224, 224, 224), rgb(68, 68, 68)); /* Safari */
@@ -262,12 +266,32 @@ input[type=submit] {
         background: radial-gradient(circle, rgb(255, 255, 255), rgb(224, 224, 224), rgb(68, 68, 68)); /* Standard syntax */
         font-family: Arial;
       }
-  /*
-      section {
+
+      .navbar{
+        position: fixed;
+        float: none;
+        text-align: center;
+      }
+      section, {
         display: inline-block;
         width: 100%;
+        position: fixed;
       }
-  */
+      .project2{
+        display:inline-block;
+        width: 100%
+      }
+
+      .project3{
+        display:inline-block;
+        width: 100%
+      }
+
+      .project4{
+        display:inline-block;
+        width: 100%
+      }
+
   }
   /* END FIRST BREAKPOINT */
   
