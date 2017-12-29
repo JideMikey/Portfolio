@@ -1,6 +1,6 @@
+/* Global styles for the Portfolio site */
 
-
-
+/* styles for the body */
 body {
   margin:0;
   padding:0;
@@ -8,6 +8,7 @@ body {
   font-family: Verdana, sans-serif;
 }
 
+/* styles for the header */
 header {
   clear: both;
   width: 100%;
@@ -15,6 +16,7 @@ header {
   color: #ffffff;
   text-align: center;
 }
+/* styles for the heading one tag */
 h1 {
   font-size: 2.5em;
   margin: 0;
@@ -22,17 +24,23 @@ h1 {
   font-family: 'Helvetica Neue';
 }
 
+/* styles for the paragraph tag */
 p {
   max-width: 100%;
 }
+
+/* styles for the heading two tag */
 h2 {
   font-size: 1.5em;
 }
+
+/* styles for the main tag */
 main {
   text-align: center;
   width: 100%;
 }
 
+/* styles for the footer */
 footer {
   text-align: center;
   color: white;
@@ -41,16 +49,16 @@ footer {
   background: rgb(71, 71, 71);
   width: 100%;
   position: relative;
-
 }
 
+/* styles for the portfolio class */
 .portfolio {
   width: 100%;
 }
 
-
-.middle {
-transition: .5s ease;
+/* styles for the portfolio link class */
+.portfolioLink {
+transition: .6s ease;
 opacity: 0;
 position: absolute;
 top: 90%;
@@ -59,21 +67,25 @@ transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%)
 }
 
+/* styles for hovering over the portfolio image */
 .portfolio:hover .image {
-opacity: 0.3;
+opacity: 0.4;
 }
 
-.portfolio:hover .middle {
+/* styles for hovering over the portfolio link */
+.portfolio:hover .portfolioLink {
 opacity: 1;
 }
 
+/* styles for the portfolio text */
 .text a {
 background-color: rgb(80, 80, 80);
 color: white;
-font-size: 16px;
+font-size: 17px;
 padding: 16px 32px;
 }
 
+/* styles for all of the project classes */
 .project1 {
   width: 100%;
   border: 1px;
@@ -94,6 +106,7 @@ padding: 16px 32px;
   float: left;
 }
 
+/* hoverstyles for all of the project classes */
 .project1:hover {
   background: rgba(255, 37, 37, 0.15);
   cursor: pointer;
