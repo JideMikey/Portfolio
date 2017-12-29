@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>
-            Contact Mikey Mwedia
-        </title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <script>
-            
-        </script>
-        <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-    </head>
-    <body>
-        <header>
-                <div class="navbar" id="myNavbar">
-                    <a href="index.html"><img src="images/MIKEYMEDIA WHITE.png" width="50px;"></a>
-                    <a href="index.html">Home</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="about.html">About</a>
-                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-                </div>
-        </header>
-        <br>
-        <main>
-            <section>
-                <img src="images/desk.jpg" width="100%">
-            </section>
-            <section>
-                <h1>Contact</h1>
-                <p>To enquire about Mikey Media's services or to work with us, fill in the contact form below with the relevant details</p>
-            </section>
-            <section>
-                <form name="contactForm" onsubmit="subnmitFunction()">
-                    <label for="name">Name:<br><input type="text" name="name" placeholder="Full Name"></label> <br><br>
-                    <label for="email">Email:<br><input type="email" name="email"placeholder="Email Address"></label> <br><br>
-                    <label for="subject">Subject:<br><input type="text" name="subject" placeholder="Subject"></label> <br><br>
-                    <label for="body">Body:<br><textarea id="body" name="body" placeholder="Enter your message here" style="height:200px"> </textarea></label> <br><br>
-                    <input type="submit" value="Submit">
-                </section>
+<head>
+<meta charset="UTF-8" />
+<title>Contact Mikey Mwedia</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar" id="myNavbar">
+            <!-- navigation bar -->
+            <a href="index.html"><img src="images/MIKEYMEDIA WHITE.png" width="50px;"></a>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </header>
+    <br>
+
+    <main>
+        <section>
+            <!-- Cover Image -->
+            <img src="images/desk.jpg" width="100%">
+        </section>
+        <section>
+            <h1>Contact</h1>
+            <p>To enquire about Mikey Media's services or to work with us, fill in the contact form below with the relevant details</p>
+        </section>
+        <section>
+            <!-- Contact form -->
+            <form name="contactForm" onsubmit="subnmitFunction()">
+                <label for="name">Name:<br><input type="text" name="name" placeholder="Full Name"></label> <br><br>
+                <label for="email">Email:<br><input type="email" name="email"placeholder="Email Address"></label> <br><br>
+                <label for="subject">Subject:<br><input type="text" name="subject" placeholder="Subject"></label> <br><br>
+                <label for="body">Body:<br><textarea id="body" name="body" placeholder="Enter your message here" style="height:200px"> </textarea></label> <br><br>
+                <input type="submit" value="Submit">
             </form>
+        </section>
+
             <br>
-        </main>
-        <footer>© 2017 | MIKEYMEDIA.CO.UK</footer>
-        <script src="scripts.js"></script>
+    </main>
+    <footer>© 2017 | MIKEYMEDIA.CO.UK</footer>
+    <script src="scripts.js"></script>
     </body>
 </html>
